@@ -1,0 +1,20 @@
+{% extends "base.html" %}
+{% block content %}
+<div class="container col-xxl-8 px-0 py-5">
+    <div class="row flex-lg-row-reverse align-items-center g-5 py-5">
+        <div class="col-10 col-sm-8 col-lg-6">
+            <img src="static/images/my_avatar.PNG" class="d-block mx-lg-auto img-fluid" alt="Bootstrap Themes" width="700" height="500" loading="lazy">
+        </div>
+        <div class="col-lg-6">
+            <h1 class="display-5 fw-bold text-body-emphasis lh-1 mb-3">Hi there! I'm <span class="name_text">Jason</span> !</h1>
+            <!--  Note: For <h1>, the text-body-emphasis class sets the text color to black using the !important flag. This makes the style take precedence over other CSS rules, even inline styles.
+            To apply custom colors, either remove the text-body-emphasis class or override it using your own CSS with !important.          -->
+            <p class="lead">Welcome to the hub! Feel free to browse the pages below and explore my projects!</p>
+            <div class="d-grid gap-2 d-md-flex justify-content-md-start">
+                <a href="{{ url_for('about') }}" type="button" class="btn btn-primary btn-lg px-4 me-md-2">About Me</a>
+                <a href="{{ url_for('projects') }}" type="button" class="btn btn-outline-secondary btn-lg px-4">Projects</a>
+            </div>
+        </div>
+    </div>
+</div>
+{% endblock %}

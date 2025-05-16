@@ -1,0 +1,88 @@
+{% extends "base.html" %}
+{% block content %}
+<div class="my-5">
+    <div class="p-5 text-center bg-body-tertiary custom-about-me">
+        <div class="container py-5">
+            <h1 class="display-5 fw-bold text-body-emphasis lh-1 mb-3">Projects</h1>
+        </div>
+    </div>
+</div>
+
+<div class="container my-5"> <!-- Bootstrap container to center content with vertical margin (my-5) -->
+    <div class="row g-3 align-items-stretch"> <!-- Start a row with gutter spacing (g-3 adds space between columns). align-items-stretch makes the grey boxes the same height!-->
+
+        <!-- First Column -->
+        <div class="col-6"> <!-- Column takes up 6/12 grid spaces (half width). This controls layout only. actual content box (with p-5, border, etc.) sits inside the column, so the gutters apply space between the columns. -->
+            <div class="p-5 text-center bg-body-tertiary rounded-3 border border-dark h-100"> <!-- h-100 forces full height of the column so that when we apply align-items-stretch it actually fills the whole space given -->
+                <!-- p-5: Large internal padding -->
+                <!-- text-center: Center text inside this box -->
+                <!-- bg-body-tertiary: Light background color -->
+                <!-- rounded-3: Rounded corners -->
+                <!-- border border-dark: Adds a dark border -->
+
+                <h2 class="text-body-emphasis">Tools</h2> <!-- Bootstrap emphasized heading -->
+                <button class="btn btn-light rounded-pill px-3" type="button" onclick="playSound()">PyCharm</button>
+                <button class="btn btn-light rounded-pill px-3" type="button" onclick="playSound()">Jupyter Notebook</button>
+                <button class="btn btn-light rounded-pill px-3" type="button" onclick="playSound()">Excel</button>
+            </div>
+        </div>
+
+        <!-- Second Column -->
+        <div class="col-6"> <!-- Second half-width column -->
+            <div class="p-5 text-center bg-body-tertiary rounded-3 border border-dark h-100">
+                <h2 class="text-body-emphasis">Development</h2>
+                <button class="btn btn-light rounded-pill px-3" type="button" onclick="playSound()">Python</button>
+                <button class="btn btn-light rounded-pill px-3" type="button" onclick="playSound()">HTML/CSS</button>
+                <button class="btn btn-light rounded-pill px-3" type="button" onclick="playSound()">Matplotlib / Plotly / Seaborn</button>
+            </div>
+        </div>
+
+    </div> <!-- End of row -->
+</div> <!-- End of container -->
+
+<div class="row">
+    <h2 class="pb-2 border-bottom text-body-emphasis">Builds</h2>
+    <div class="row g-4 py-5 row-cols-1 row-cols-lg-3">
+
+    <div class="col-lg-4 text-center">
+        <img src="static/images/Telegram_logo.png" class="bd-placeholder-img rounded-circle" height="140" width="140" alt="Telegram logo image">
+
+        <!--        <svg aria-label="Placeholder" class="bd-placeholder-img rounded-circle" height="140" preserveAspectRatio="xMidYMid slice" role="img" width="140" xmlns="http://www.w3.org/2000/svg">-->
+        <!--            <title>Placeholder</title>-->
+        <!--            <rect width="100%" height="100%" fill="var(&#45;&#45;bs-secondary-color)"></rect>-->
+        <!--        </svg>-->
+        <h2 class="fw-normal text-body-emphasis">Reminders bot</h2>
+        <p class="lead">Created a custom telegram bot that fetches live data from Google Forms and Google Sheets, automating the equipment loans process, saving over 50 hours annually.</p>
+        <!--        <p><a class="btn btn-secondary" href="#">View details »</a></p>-->
+    </div><!-- /.col-lg-4 -->
+    <div class="col-lg-4 text-center">
+        <img src="static/images/computer_logo.png" class="bd-placeholder-img rounded-circle" height="140" width="140" alt="Computer image">
+
+        <!--        <svg aria-label="Placeholder" class="bd-placeholder-img rounded-circle" height="140" preserveAspectRatio="xMidYMid slice" role="img" width="140" xmlns="http://www.w3.org/2000/svg">-->
+        <!--            <title>Placeholder</title>-->
+        <!--            <rect width="100%" height="100%" fill="var(&#45;&#45;bs-secondary-color)"></rect>-->
+        <!--        </svg>-->
+        <h2 class="fw-normal text-body-emphasis">Web Scrapers</h2>
+        <p class="lead">Used Selenium to build amazon web scrapper to obtain live price data from the Web, securing up to 90% discounts on items</p>
+    </div><!-- /.col-lg-4 -->
+    <div class="col-lg-4 text-center">
+        <!-- The svg tag is just a placeholder, replace it with the img tag       -->
+        <img src="static/images/Plotly Logo Circular.png" class="bd-placeholder-img rounded-circle" height="140" width="140" alt="Telegram logo image">
+        <!--        <svg aria-label="Placeholder" class="bd-placeholder-img rounded-circle" height="140" preserveAspectRatio="xMidYMid slice" role="img" width="140" xmlns="http://www.w3.org/2000/svg">-->
+        <!--            <title>Placeholder</title>-->
+        <!--            <rect width="100%" height="100%" fill="var(&#45;&#45;bs-secondary-color)"></rect>-->
+        <!--        </svg>-->
+        <h2 class="fw-normal text-body-emphasis">Visualisations</h2>
+        <p class="lead">Built visualisations with online Google Trends data to optimise search results, built and trained multi-variable regression model with Seaborn to predict house prices</p>
+    </div><!-- /.col-lg-4 -->
+    </div>
+</div>
+
+<div class="container my-5">
+    <div class="p-5 bg-body-tertiary rounded-3">
+        <div class="text-start">
+            <p class="lead text-center">That's all for now! I have other projects that I'm currently working on that I plan to release soon!</p>
+        </div>
+    </div>
+</div>
+{% endblock %}

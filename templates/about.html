@@ -1,0 +1,81 @@
+{% extends "base.html" %}
+{% block content %}
+<div class="my-5">
+    <div class="p-5 text-center bg-body-tertiary custom-about-me">
+        <div class="container py-5">
+            <h1 class="display-5 fw-bold text-body-emphasis lh-1 mb-3">About Me</h1>
+        </div>
+    </div>
+</div>
+
+<div class="container col-xxl-8 px-4 py-5">
+    <!--  Note you can change flex-row to flex-row-reverse to change the order of the picture and the text shown on the website -->
+    <div class="row flex-lg-row align-items-center g-5 py-5">
+        <div class="col-10 col-sm-8 col-lg-6">
+            <img src="static/images/computer_avatar.PNG" class="d-block mx-lg-auto img-fluid" alt="Bootstrap Themes" width="700" height="500" loading="lazy">
+        </div>
+        <div class="col-lg-6">
+            <h2 class="display-0 fw-bold text-body-emphasis lh-1 mb-3">Hi, I’m Jason! I...</h2>
+            <ul>
+                <li class="lead">love to create python automations,</li>
+                <li class="lead">use Matplotlib and Plotly to create visualisations,</li>
+                <li class="lead">dabble in front and backend Web Development with Python!</li>
+            </ul>
+        </div>
+    </div>
+</div>
+
+<div class="container my-5">
+    <div class="p-5 bg-body-tertiary rounded-3">
+        <h1 class="text-body-emphasis text-center">Education</h1>
+        <!--   text-center ensures the text are centralised, text-start ensures the text is left-aligned. right-aligned use text-end     -->
+        <div class="text-start">
+            <ul>
+                <li class="lead">Hwa Chong Institution (College) Diploma with Distinction</li>
+                <li class="lead">Incoming NTU (Business) Undergraduate & NTU-USP (University Scholars Programme) student</li>
+            </ul>
+        </div>
+    </div>
+</div>
+
+<div class="container px-4 py-5" id="hanging-icons">
+    <h2 class="pb-2 border-bottom text-body-emphasis">Other Interests</h2>
+    <div class="row g-4 py-5 row-cols-1 row-cols-lg-3">
+        <div class="col d-flex align-items-start">
+            <div class="icon-square text-body-emphasis d-inline-flex align-items-center justify-content-center fs-4 flex-shrink-0 me-3">
+            <!--  remove the tag bg-body-secondary if you don't want a grey background; bg-body-secondary is a utility class that applies a background color based on the theme's "secondary" color tone, which is a neutral grey              -->
+                <svg xmlns="http://www.w3.org/2000/svg" width="2em" height="2em" fill="currentColor" class="bi bi-joystick" viewBox="0 0 16 16">
+                  <path d="M10 2a2 2 0 0 1-1.5 1.937v5.087c.863.083 1.5.377 1.5.726 0 .414-.895.75-2 .75s-2-.336-2-.75c0-.35.637-.643 1.5-.726V3.937A2 2 0 1 1 10 2"/>
+                  <path d="M0 9.665v1.717a1 1 0 0 0 .553.894l6.553 3.277a2 2 0 0 0 1.788 0l6.553-3.277a1 1 0 0 0 .553-.894V9.665c0-.1-.06-.19-.152-.23L9.5 6.715v.993l5.227 2.178a.125.125 0 0 1 .001.23l-5.94 2.546a2 2 0 0 1-1.576 0l-5.94-2.546a.125.125 0 0 1 .001-.23L6.5 7.708l-.013-.988L.152 9.435a.25.25 0 0 0-.152.23"/>
+                </svg>
+            </div>
+            <div>
+                <h3 class="fs-2 text-body-emphasis">Game Development</h3>
+                <p class="lead">Particularly on Roblox! I've a few game ideas that I want to implement hehe</p>
+            </div>
+        </div>
+        <div class="col d-flex align-items-start">
+            <div class="icon-square text-body-emphasis d-inline-flex align-items-center justify-content-center fs-4 flex-shrink-0 me-3">
+                <svg xmlns="http://www.w3.org/2000/svg" width="2em" height="2em" fill="currentColor" class="bi bi-book-half" viewBox="0 0 16 16">
+                  <path d="M8.5 2.687c.654-.689 1.782-.886 3.112-.752 1.234.124 2.503.523 3.388.893v9.923c-.918-.35-2.107-.692-3.287-.81-1.094-.111-2.278-.039-3.213.492zM8 1.783C7.015.936 5.587.81 4.287.94c-1.514.153-3.042.672-3.994 1.105A.5.5 0 0 0 0 2.5v11a.5.5 0 0 0 .707.455c.882-.4 2.303-.881 3.68-1.02 1.409-.142 2.59.087 3.223.877a.5.5 0 0 0 .78 0c.633-.79 1.814-1.019 3.222-.877 1.378.139 2.8.62 3.681 1.02A.5.5 0 0 0 16 13.5v-11a.5.5 0 0 0-.293-.455c-.952-.433-2.48-.952-3.994-1.105C10.413.809 8.985.936 8 1.783"/>
+                </svg>
+            </div>
+            <div>
+                <h3 class="fs-2 text-body-emphasis">Books</h3>
+                <p class="lead">Thrillers, Mystery, Sci-Fic or just a good book in general!</p>
+            </div>
+        </div>
+        <div class="col d-flex align-items-start">
+            <div class="icon-square text-body-emphasis d-inline-flex align-items-center justify-content-center fs-4 flex-shrink-0 me-3">
+                <svg xmlns="http://www.w3.org/2000/svg" width="2em" height="2em" fill="currentColor" class="bi bi-image-alt" viewBox="0 0 16 16">
+                  <path d="M7 2.5a2.5 2.5 0 1 1-5 0 2.5 2.5 0 0 1 5 0m4.225 4.053a.5.5 0 0 0-.577.093l-3.71 4.71-2.66-2.772a.5.5 0 0 0-.63.062L.002 13v2a1 1 0 0 0 1 1h14a1 1 0 0 0 1-1v-4.5z"/>
+                </svg>
+            </div>
+            <div>
+                <h3 class="fs-2 text-body-emphasis">Sunsets</h3>
+                <p class="lead">I love sunsets, especially when there's a mix of orange and pink shades in the sky!</p>
+            </div>
+        </div>
+    </div>
+</div>
+{% endblock %}
